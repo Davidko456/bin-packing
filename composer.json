@@ -1,0 +1,27 @@
+{
+    "name": "davidrybar/bin-packing",
+    "description": "Implementation of bin packing problem algorithms.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dávid Rýbar",
+            "email": "david.rybar.work@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BinPacking\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BinPacking\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "8.0.0",
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12.73"
+    }
+}
