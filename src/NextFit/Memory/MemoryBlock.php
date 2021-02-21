@@ -14,6 +14,9 @@ class MemoryBlock extends Block
      */
     private array $allocators;
 
+    /**
+     * @throws MemoryOverSizeException
+     */
     public function allocate(Block $block): void
     {
         if ($this->getAvailableSize() < $block->getSize()) {

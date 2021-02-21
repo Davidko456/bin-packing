@@ -4,7 +4,6 @@
 namespace BinPacking\NextFit\Memory;
 
 
-use Throwable;
 
 class MemoryOverSizeException extends \RuntimeException
 {
