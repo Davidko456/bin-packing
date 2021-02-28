@@ -4,7 +4,7 @@
 namespace BinPacking\Tests\NextFit;
 
 
-use BinPacking\NextFit\Item;
+use BinPacking\Cargo\Item;
 use BinPacking\Util\Dimensions3D;
 use PHPStan\Testing\TestCase;
 

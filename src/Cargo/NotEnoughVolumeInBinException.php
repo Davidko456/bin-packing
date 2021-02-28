@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 
-namespace BinPacking\NextFit;
+namespace BinPacking\Cargo;
 
 
 use JetBrains\PhpStorm\Pure;

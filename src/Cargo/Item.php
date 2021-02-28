@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
 
-namespace BinPacking\NextFit;
+namespace BinPacking\Cargo;
 
 
 
-use BinPacking\NextFit\Box\Box;
+use BinPacking\Cargo\Box\Box;
 use BinPacking\Util\Dimensions3D;
 use BinPacking\Util\IdentificationGenerator\IntegerIdGenerator;
 
@@ -20,9 +20,6 @@ class Item extends Box
         $this->id = $idGenerator->generate();
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;

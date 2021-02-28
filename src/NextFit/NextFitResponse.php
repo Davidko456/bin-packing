@@ -4,6 +4,9 @@
 namespace BinPacking\NextFit;
 
 
+use BinPacking\Cargo\Bin;
+use BinPacking\Cargo\Item;
+
 class NextFitResponse
 {
     /**

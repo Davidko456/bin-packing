@@ -4,7 +4,10 @@
 namespace BinPacking\NextFit;
 
 
-use BinPacking\NextFit\Box\Box;
+use BinPacking\Cargo\Bin;
+use BinPacking\Cargo\Box\Box;
+use BinPacking\Cargo\Item;
+use BinPacking\Cargo\NotEnoughVolumeInBinException;
 
 class NextFit
 {

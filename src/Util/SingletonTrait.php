@@ -6,7 +6,7 @@ namespace BinPacking\Util;
 
 use Exception;
 
-abstract class Singleton
+trait SingletonTrait
 {
     private static ?self $instance = null;
 
@@ -22,10 +22,7 @@ abstract class Singleton
         throw new Exception("Cannot unserializable a singleton.");
     }
 
-    /**
-     * @return static
-     */
-    public static function getInstance(): self
+    public static function getInstance(): static
     {
         if (self::$instance === null) {
             self::$instance = new static();

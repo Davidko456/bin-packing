@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 
-namespace BinPacking\NextFit\Box;
+namespace BinPacking\Cargo\Box;
 
 
 interface BoxInterface

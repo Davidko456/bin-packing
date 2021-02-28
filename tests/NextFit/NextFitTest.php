@@ -4,8 +4,8 @@
 namespace BinPacking\Tests\NextFit;
 
 
-use BinPacking\NextFit\Bin;
-use BinPacking\NextFit\Item;
+use BinPacking\Cargo\Bin;
+use BinPacking\Cargo\Item;
 use BinPacking\NextFit\NextFit;
 use BinPacking\NextFit\NextFitResponse;
 use BinPacking\Util\Dimensions3D;

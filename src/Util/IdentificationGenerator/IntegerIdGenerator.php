@@ -5,10 +5,12 @@ namespace BinPacking\Util\IdentificationGenerator;
 
 
 use BinPacking\Util\InternalHelper;
-use BinPacking\Util\Singleton;
+use BinPacking\Util\SingletonTrait;
 
-class IntegerIdGenerator extends Singleton implements IntegerIdInterface
+class IntegerIdGenerator implements IntegerIdInterface
 {
+    use SingletonTrait;
+
     /**
      * @var int[]
      */

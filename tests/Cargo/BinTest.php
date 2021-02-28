@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
 
-namespace BinPacking\Tests\NextFit;
+namespace BinPacking\Tests\Cargo;
 
 
-use BinPacking\NextFit\Bin;
-use BinPacking\NextFit\Item;
-use BinPacking\NextFit\NotEnoughVolumeInBinException;
+use BinPacking\Cargo\Bin;
+use BinPacking\Cargo\Item;
+use BinPacking\Cargo\NotEnoughVolumeInBinException;
 use BinPacking\Util\Dimensions3D;
 use PHPStan\Testing\TestCase;
 
