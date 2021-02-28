@@ -3,7 +3,7 @@
 namespace BinPacking\NextFit\Box;
 
 
-use BinPacking\NextFit\Util\Dimensions3D;
+use BinPacking\Util\Dimensions3D;
 use JetBrains\PhpStorm\Pure;
 
 abstract class Box implements BoxInterface

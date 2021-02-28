@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 
-namespace BinPacking\NextFit\Util\IdentificationGenerator;
+namespace BinPacking\Util\IdentificationGenerator;
 
 
 interface IntegerIdInterface

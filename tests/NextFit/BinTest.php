@@ -7,7 +7,7 @@ namespace BinPacking\Tests\NextFit;
 use BinPacking\NextFit\Bin;
 use BinPacking\NextFit\Item;
 use BinPacking\NextFit\NotEnoughVolumeInBinException;
-use BinPacking\NextFit\Util\Dimensions3D;
+use BinPacking\Util\Dimensions3D;
 use PHPStan\Testing\TestCase;
 
 class BinTest extends TestCase

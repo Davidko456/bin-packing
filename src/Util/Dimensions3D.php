@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 
-namespace BinPacking\NextFit\Util;
+namespace BinPacking\Util;
 
 
 class Dimensions3D

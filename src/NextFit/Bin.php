@@ -5,8 +5,8 @@ namespace BinPacking\NextFit;
 
 
 use BinPacking\NextFit\Box\Box;
-use BinPacking\NextFit\Util\Dimensions3D;
-use BinPacking\NextFit\Util\IdentificationGenerator\IntegerIdGenerator;
+use BinPacking\Util\Dimensions3D;
+use BinPacking\Util\IdentificationGenerator\IntegerIdGenerator;
 use JetBrains\PhpStorm\Pure;
 
 class Bin extends Box

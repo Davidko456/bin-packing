@@ -5,7 +5,7 @@ namespace BinPacking\Tests\NextFit;
 
 
 use BinPacking\NextFit\Item;
-use BinPacking\NextFit\Util\Dimensions3D;
+use BinPacking\Util\Dimensions3D;
 use PHPStan\Testing\TestCase;
 
 class ItemTest extends TestCase

@@ -11,7 +11,6 @@ class NextFit
     /**
      * @param Item[] $items
      * @param Bin[] $bins
-     * @return Bin[]
      */
     public function run(array $items, array $bins): NextFitResponse
     {
@@ -39,7 +38,6 @@ class NextFit
     /**
      * @param Item[] $items
      * @param Bin[] $bins
-     * @return Bin[]
      */
     private function allocateBins(array $bins, array $items): NextFitResponse
     {

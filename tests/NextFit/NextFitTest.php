@@ -8,7 +8,7 @@ use BinPacking\NextFit\Bin;
 use BinPacking\NextFit\Item;
 use BinPacking\NextFit\NextFit;
 use BinPacking\NextFit\NextFitResponse;
-use BinPacking\NextFit\Util\Dimensions3D;
+use BinPacking\Util\Dimensions3D;
 use PHPStan\Testing\TestCase;
 
 class NextFitTest extends TestCase
