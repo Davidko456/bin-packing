@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 
 namespace BinPacking\Tests\NextFit;
@@ -22,5 +22,7 @@ class ItemTest extends TestCase
         self::assertEquals($y, $item->getDimensions()->getY());
         self::assertEquals($z, $item->getDimensions()->getZ());
         self::assertEquals(36, $item->getVolume());
+        self::assertIsString($item->getId());
+        $itemId = $item->getId();
     }
 }

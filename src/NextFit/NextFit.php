@@ -13,12 +13,12 @@ class NextFit
      * @param Bin[] $bins
      * @return Bin[]
      */
-    public function run(array $items, array $bins): array
+    public function run(array $items, array $bins): NextFitResponse
     {
         $items = $this->orderBoxesAscending($items);
         $bins = $this->orderBoxesAscending($bins);
 
-        return $this->allocateBins($items, $bins);
+        return $this->allocateBins($bins, $items);
     }
 
     /**
@@ -41,23 +41,29 @@ class NextFit
      * @param Bin[] $bins
      * @return Bin[]
      */
-    private function allocateBins(array $items, array $bins): array
+    private function allocateBins(array $bins, array $items): NextFitResponse
     {
-        $index = 0;
-        foreach ($items as $item) {
-            $allocated = false;
+        $binIndex = 0;
+        $itemIndex = 0;
+        $binCount = count($bins);
+        $itemCount = count($items);
 
-            do {
-                try {
-                    $bins[$index]->addBox($item);
-                    $allocated = true;
-                } catch (NotEnoughVolumeInBinException) {
-                    $index++;
-                }
+        do{
+            try {
+                $bins[$binIndex]->addBox($items[$itemIndex]);
+                unset($items[$itemIndex]);
+                $itemIndex++;
+            } catch (NotEnoughVolumeInBinException) {
+                $binIndex++;
             }
-            while ($allocated);
-        }
 
-        return $bins;
+            if ($binIndex >= $binCount || $itemIndex >= $itemCount) {
+                break;
+            }
+
+        } while(true);
+
+        $items = array_values($items);
+        return new NextFitResponse($bins,$items);
     }
 }

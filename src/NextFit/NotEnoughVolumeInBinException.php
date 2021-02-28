@@ -1,11 +1,10 @@
-<?php
+<?php declare(strict_types=1);
 
 
 namespace BinPacking\NextFit;
 
 
 use JetBrains\PhpStorm\Pure;
-use Throwable;
 
 class NotEnoughVolumeInBinException extends \Exception
 {
